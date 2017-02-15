@@ -9,7 +9,7 @@
    * RESET_H     3 //mega_head
    * RESET_W     2 //mega_wheel
    
-# Upload code (first argument is the programmer ID)
-    $ sudo python upload.py 328p_follow
+# Upload code (1st arg is device, 2nd arg is the code to upload)
+    $ sudo python upload.py 328p_follow rugby-328-blink
 
 
