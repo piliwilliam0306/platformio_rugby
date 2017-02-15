@@ -5,26 +5,7 @@ import os
 import time
 
 def update(args):
-	if args.target =='328p_left':
-	    os.system('platformio run -d ArduinoISP/328L-isp --target upload')
-	elif args.target =='328p_right':
-	    os.system('platformio run -d ArduinoISP/328R-isp --target upload')
-	elif args.target =='328p_pan':
-            os.system('platformio run -d ArduinoISP/328P-isp --target upload')
-        elif args.target =='328p_tilt':
-            os.system('platformio run -d ArduinoISP/328T-isp --target upload')
-	elif args.target =='328p_imu':
-            os.system('platformio run -d ArduinoISP/328I-isp --target upload')
-        elif args.target =='328p_avoid':
-            os.system('platformio run -d ArduinoISP/328A-isp --target upload')
-        elif args.target =='328p_follow':
-            os.system('platformio run -d ArduinoISP/328F-isp --target upload')
-        elif args.target =='mega_head':
-            os.system('platformio run -d ArduinoISP/MegaH-isp --target upload')	
-	elif args.target =='mega_wheel':
-            os.system('platformio run -d ArduinoISP/MegaW-isp --target upload') 	
-	else:
-	    print("wtf")	
+	os.system('platformio run -d ArduinoISP/{} --target upload'.format(arg.target))
 
 def upload(args):
 	os.system('platformio run -t program -d {}'.format(args.code))
