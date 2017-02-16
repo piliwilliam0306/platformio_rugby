@@ -1,5 +1,6 @@
 # platformio_rugby
 ## programmer ID list
+   * RESET_L     10 //328p_left
    * RESET_R     9 //328p_right
    * RESET_P     8 //328p_pan
    * RESET_T     7 //328p_tilt
