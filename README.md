@@ -19,5 +19,6 @@
     $ sudo python upload.py 328p_follow rugby-328-blink
 
 ## Reference 
-http://docs.platformio.org/en/latest/installation.html
-http://docs.platformio.org/en/latest/platforms/atmelavr.html#custom-fuses
+  http://docs.platformio.org/en/latest/installation.html
+  
+  http://docs.platformio.org/en/latest/platforms/atmelavr.html#custom-fuses
