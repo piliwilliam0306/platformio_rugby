@@ -20,3 +20,4 @@
 
 ## Reference 
 http://docs.platformio.org/en/latest/installation.html
+http://docs.platformio.org/en/latest/platforms/atmelavr.html#custom-fuses
