@@ -1,5 +1,6 @@
-# platformio_rugby
-## programmer ID list
+# Platformio_rugby
+## Programmer ID list
+   * RESET_L     10 //328p_left
    * RESET_R     9 //328p_right
    * RESET_P     8 //328p_pan
    * RESET_T     7 //328p_tilt
@@ -17,4 +18,7 @@
 ## Upload code (1st arg is the device, 2nd arg is the code to upload)
     $ sudo python upload.py 328p_follow rugby-328-blink
 
-
+## Reference 
+  http://docs.platformio.org/en/latest/installation.html
+  
+  http://docs.platformio.org/en/latest/platforms/atmelavr.html#custom-fuses
