@@ -1,4 +1,9 @@
 # Platformio_rugby
+
+## Upload bootloader
+    $ cd bootloader
+    $ sudo pio run -t uploadboot
+
 ## Programmer ID list
    * RESET_L     10 //328p_left
    * RESET_R     9 //328p_right
