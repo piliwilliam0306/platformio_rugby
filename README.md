@@ -1,12 +1,12 @@
 # Platformio_rugby
 
-## Upload bootloader
+## Upload bootloader for programmer
     $ cd bootloader
     $ sudo pio run -t uploadboot
     
-## Setting target fuse
-    $ avrdude -P /dev/ttyUSB5 -b 19200 -c avrisp -p m328p -U efuse:w:0x05:m -U hfuse:w:0xDE:m -U lfuse:w:0xFF:m
-    $ avrdude -P /dev/ttyUSB5 -b 19200 -c avrisp -p m2560 -U efuse:w:0xFD:m -U hfuse:w:0xD8:m -U lfuse:w:0xFF:m
+## Setting fuse
+    $ sudo python fuse-set.py
+    
 ## Checking target fuse
     $ avrdude -P /dev/ttyUSB5 -b 57600 -c arduino -p m328p -v
 
