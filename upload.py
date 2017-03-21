@@ -5,7 +5,7 @@ import os
 import time
 
 def update(args):
-	os.system('platformio run -d ArduinoISP/{} --target upload'.format(arg.target))
+	os.system('platformio run -d ArduinoISP/{} --target upload'.format(args.target))
 
 def upload(args):
 	os.system('platformio run -t program -d {}'.format(args.code))
