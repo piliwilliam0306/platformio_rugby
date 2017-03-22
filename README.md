@@ -38,7 +38,7 @@
     - fuse for 2560: efuse=0xFD hfuse=0xD8 lfuse0xFF
 
 ## Upload code for individual target (1st arg is the target, 2nd arg is the code to upload)
-    $ sudo python upload.py 328p_follow rugby-328-blink 
+    $ sudo python upload.py 328p_follow rugby-blink/rugby-328-blink 
     
 ## Reference 
   http://docs.platformio.org/en/latest/installation.html
