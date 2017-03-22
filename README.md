@@ -11,7 +11,7 @@
    * mega_head  (U12 on RB)
    * mega_wheel (U09 on RB)
 
-## Upload bootloader for programmer
+## Upload bootloader for programmer with Arduino Uno
     $ cd bootloader
     $ sudo pio run -t uploadboot
 
