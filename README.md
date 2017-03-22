@@ -22,11 +22,12 @@
     $ sudo python fuse-set.py
 
 ## Rugby_board sanity test 
-    $ sudo python sanity-test.py 
+    $ sudo python sanity-blink.py 
     - LED should blink every 500ms
-    $ sudo python sanity-test-fast.py 
+    $ sudo python sanity-blink-fast.py 
     - LED should blink every 100ms
     - we should see all LEDs blinking, if not, check if target fuse set correctly
+    $ sudo python sanity-uart.py
 
 ## Checking target fuse 
     $ sudo platformio run -d ArduinoISP/328p_follow --target upload
@@ -38,11 +39,6 @@
 
 ## Upload code for individual target (1st arg is the target, 2nd arg is the code to upload)
     $ sudo python upload.py 328p_follow rugby-328-blink 
-
-## Note: We must program 328p_avoid with Arduino Uno
-    $ avrdude -P /dev/ttyACM0 -b 19200 -c avrisp -p m328p -U efuse:w:0x05:m -U hfuse:w:0xDA:m -U lfuse:w:0xFF:m
-    $ sudo platformio run -t program -d rugby-328-blink
-    - replace rugby-328-blink with the code you want to upload
     
 ## Reference 
   http://docs.platformio.org/en/latest/installation.html
