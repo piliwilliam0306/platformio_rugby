@@ -11,7 +11,7 @@
    * mega_head  (U12 on RB)
    * mega_wheel (U09 on RB)
 
-## Upload bootloader for programmer
+## Upload bootloader for programmer with Arduino Uno
     $ cd bootloader
     $ sudo pio run -t uploadboot
 
@@ -36,10 +36,14 @@
     $ avrdude -P /dev/ttyUSB5 -b 19200 -c avrisp -p m2560 -v
     - fuse for 2560: efuse=0xFD hfuse=0xD8 lfuse0xFF
 
-## Upload code for individual target (1st arg is the device, 2nd arg is the code to upload)
+## Upload code for individual target (1st arg is the target, 2nd arg is the code to upload)
     $ sudo python upload.py 328p_follow rugby-328-blink 
-    - replace 328p_follow with other device ID 
 
+## Note: We must program 328p_avoid with Arduino Uno
+    $ avrdude -P /dev/ttyACM0 -b 19200 -c avrisp -p m328p -U efuse:w:0x05:m -U hfuse:w:0xDA:m -U lfuse:w:0xFF:m
+    $ sudo platformio run -t program -d rugby-328-blink
+    - replace rugby-328-blink with the code you want to upload
+    
 ## Reference 
   http://docs.platformio.org/en/latest/installation.html
   
