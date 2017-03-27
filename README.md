@@ -7,7 +7,7 @@
    * 328p_pan   (U25 on RB, uart thru mega_head U12)
    * 328p_tilt  (U22 on RB, uart thru mega_head U12)
    * 328p_avoid (U03 on RB, uart thru ftdi U4)
-   * 328p_dock(U01 on RB, uart thru ftdi U2) 
+   * 328p_dock  (U01 on RB, uart thru ftdi U2) 
    * mega_head  (U12 on RB, uart thru ftdi U13)
    * mega_wheel (U09 on RB, uart thru ftdi U10)
 
