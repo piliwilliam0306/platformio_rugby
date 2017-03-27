@@ -13,33 +13,25 @@
 
 ## Connector Pins 
 
-Pins| Left (M1) right (M2)|Pan (M3) | (S1) | (S2) | Tilt (M4) | (S3) | (S4) |       
-:--:|:-------------------:|:-------:|:----:|:----:|:---------:|:----:|:----:|
-6   | OUT_A               | OUT_A   |  --  |  --  |  OUT_A    |  --  |  --  |
-5   | OUT_B               | OUT_B   |  --  |  --  |  OUT_B    |  --  |  --  |
-4   | GND                 | GND     |  --  |  --  |  GND      |  --  |  --  |
-3   | 5V                  | 5V      |  5V  |  5V  |  5V       |  5V  |  5V  |
-2   | HALL_A              | HALL_A  |  LA  |  LB  |  HALL_A   |  LA  |  LB  |
-1   | HALL_B              | HALL_B  |  GND |  GND |  HALL_B   |  GND |  GND |
+Pins| Left (M1) right (M2)|Pan (M3) | (S1) | (S2) | Tilt (M4) | (S3) | (S4) | 328p_dock (J1)|
+:--:|:-------------------:|:-------:|:----:|:----:|:---------:|:----:|:----:|  --           |
+6   | OUT_A               | OUT_A   |  --  |  --  |  OUT_A    |  --  |  --  |  --           |
+5   | OUT_B               | OUT_B   |  --  |  --  |  OUT_B    |  --  |  --  |  --           |
+4   | GND                 | GND     |  --  |  --  |  GND      |  --  |  --  |  5V           |
+3   | 5V                  | 5V      |  5V  |  5V  |  5V       |  5V  |  5V  |  Gnd          |
+2   | HALL_A              | HALL_A  |  LA  |  LB  |  HALL_A   |  LA  |  LB  |  D5           |
+1   | HALL_B              | HALL_B  |  GND |  GND |  HALL_B   |  GND |  GND |  D6           |
 
-Pins|328p_dock (J1)| 328p_avoid (J3) | (J4) | (J5) | (J6) |        
-:--:|:------------:|:---------------:|:----:|:----:|:----:|
- 7  |  --          |        --       |  --  | --   | 5V   |
- 6  |  --          |        --       |  --  | 5V   | GND  |
- 5  |  --          |        --       |  --  | Gnd  | D10  |
- 4  |  5V          |        5V       |  5V  | D6   | D11  |
- 3  |  Gnd         |        Gnd      |  Gnd | D7   | D12  |
- 2  |  D5          |        D2       |  D4  | D8   | D13  |
- 1  |  D6          |        D3       |  D5  | D9   | RESET|
-  
-Pins| 328p_program (J8) | 328p_IMU (J9) | mega_head (J10) | (J11) |       
-:--:|:-----------------:|:-------------:|:---------------:|:-----:|
-6   |  GND              |        --     |  --             | --    |
-5   |  RESET            |        5V     |  5V             | SCL   |
-4   |  MOSI             |        --     |  Gnd            | SDA   | 
-3   |  SCK              |        Gnd    |  SA0            | --    | 
-2   |  5V               |        SCL    |  SA1            | GND   |
-1   |  MISO             |        SDA    |  SD2            | GND   |
+Pins| 328p_avoid (J3) | (J4) | (J5) | (J6) | 328p_program (J8) | 328p_IMU (J9) | mega_head (J10) | (J11) |        
+:--:|:---------------:|:----:|:----:|:----:|:-----------------:|:-------------:|:---------------:|:-----:|
+ 7  |        --       |  --  | --   | 5V   |  --               |        --     |  --             | --    |
+ 6  |        --       |  --  | 5V   | GND  |  GND              |        --     |  --             | --    |
+ 5  |        --       |  --  | Gnd  | D10  |  RESET            |        5V     |  5V             | SCL   |
+ 4  |        5V       |  5V  | D6   | D11  |  MOSI             |        --     |  Gnd            | SDA   |
+ 3  |        Gnd      |  Gnd | D7   | D12  |  SCK              |        Gnd    |  SA0            | --    |
+ 2  |        D2       |  D4  | D8   | D13  |  5V               |        SCL    |  SA1            | GND   |
+ 1  |        D3       |  D5  | D9   | RESET|  MISO             |        SDA    |  SD2            | GND   |
+
 
 ## Upload bootloader for programmer with Arduino Uno
     $ cd bootloader
