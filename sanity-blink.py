@@ -10,7 +10,7 @@ def upload():
     os.system('python upload.py 328p_pan rugby-blink/rugby-328-blink')
     os.system('python upload.py 328p_tilt rugby-blink/rugby-328-blink')
     os.system('python upload.py 328p_imu rugby-blink/rugby-328-blink')
-    os.system('python upload.py 328p_follow rugby-blink/rugby-328-blink')
+    os.system('python upload.py 328p_dock rugby-blink/rugby-328-blink')
     os.system('python upload.py 328p_avoid rugby-blink/rugby-328-blink')
     os.system('python upload.py mega_wheel rugby-blink/rugby-2560-blink')
     os.system('python upload.py mega_head rugby-blink/rugby-2560-blink')

@@ -10,7 +10,7 @@ def upload():
     os.system('python upload.py 328p_pan rugby-uart/rugby-pan-uart')	
     os.system('python upload.py 328p_tilt rugby-uart/rugby-tilt-uart')	
     os.system('python upload.py 328p_imu rugby-uart/rugby-imu-uart')	
-    os.system('python upload.py 328p_follow rugby-uart/rugby-follow-uart')	
+    os.system('python upload.py 328p_dock rugby-uart/rugby-dock-uart')	
     os.system('python upload.py 328p_avoid rugby-uart/rugby-avoid-uart')	
     os.system('python upload.py mega_head rugby-uart/rugby-mega-uart')	
     os.system('python upload.py mega_wheel rugby-uart/rugby-mega-uart')	

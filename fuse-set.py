@@ -20,7 +20,7 @@ def upload():
     os.system('platformio run -d ArduinoISP/328p_imu --target upload')	
     os.system(fuse328p)	
     os.system(fuse328p)	
-    os.system('platformio run -d ArduinoISP/328p_follow --target upload')	
+    os.system('platformio run -d ArduinoISP/328p_dock --target upload')	
     os.system(fuse328p)	
     os.system(fuse328p)	
     os.system('platformio run -d ArduinoISP/328p_avoid --target upload')	
