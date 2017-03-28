@@ -9,7 +9,7 @@ void setup() {
 void loop() {
   if (Serial.available() > 0) {
     char readChar = (char)Serial.read();
-    if (readChar == 'f')
+    if (readChar == 'd')
       {	
         digitalWrite(RELAY, HIGH);
         delay(100);
