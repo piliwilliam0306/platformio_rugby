@@ -6,7 +6,7 @@ Target ID | Part# | UART Thru   |
 :--------:|:-----:|:-----------:|
 328p_left |  U19  |mega_wheel U9|
 328p_right|  U16  |mega_wheel U9|
-328p_IMU  |  U11  |mega_wheel U9|
+328p_imu  |  U11  |mega_wheel U9|
 328p_pan  |  U25  |mega_head U12|
 328p_tilt |  U22  |mega_head U12|
 328p_avoid|  U3   |FTDI U4      |
