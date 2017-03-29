@@ -53,6 +53,9 @@ Pins| 328p_avoid (J3) | (J4) | (J5) | (J6) | 328p_program (J8) | 328p_IMU (J9) |
     - LED should blink every 100ms
     - we should see all LEDs blinking, if not, check if target fuse set correctly
     $ sudo python sanity-uart.py
+    - programming uart functions to each MCU
+    $ python uart-test.py
+    - send a character to each MCU, see instruction when running this code.
 
 ## Checking target fuse 
     $ sudo platformio run -d ArduinoISP/328p_dock --target upload
