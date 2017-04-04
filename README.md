@@ -69,12 +69,14 @@ Pins| 328p_avoid (J3) | (J4) | (J5) | (J6) | 328p_program (J8) | 328p_IMU (J9) |
     $ sudo python upload.py 328p_dock rugby-blink/rugby-328-blink 
     
 ## Reference 
-  http://docs.platformio.org/en/latest/installation.html
+  [Installation Guide](http://docs.platformio.org/en/latest/installation.html)
   
-  http://docs.platformio.org/en/latest/platforms/atmelavr.html#custom-fuses
+  [Setting Custom Fuses](http://docs.platformio.org/en/latest/platforms/atmelavr.html#custom-fuses)
 
-  http://heliosoph.mit-links.info/arduinoisp-reading-writing-fuses-atmega328p/
+  [Setting Fuse with AVRdude](http://heliosoph.mit-links.info/arduinoisp-reading-writing-fuses-atmega328p/)
   
-  http://www.martyncurrey.com/arduino-atmega-328p-fuse-settings/
+  [Fuse Table](http://www.martyncurrey.com/arduino-atmega-328p-fuse-settings/)
   
-  http://www.codingwithcody.com/2011/06/25/arduino-default-fuse-settings/
+  [Arduino Default Fuse Settings](http://www.codingwithcody.com/2011/06/25/arduino-default-fuse-settings/)
+  
+  
