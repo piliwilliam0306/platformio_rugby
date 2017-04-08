@@ -1,5 +1,8 @@
 # Platformio_rugby
 
+## RB block diagram
+![](https://github.com/piliwilliam0306/platformio_rugby/blob/master/RB_block.jpg)
+
 ## Target ID list
   
 Target ID | Part# | UART Thru   |
