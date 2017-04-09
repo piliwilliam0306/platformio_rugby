@@ -1,7 +1,10 @@
 # Platformio_rugby
 
 ## RB block diagram
+<!--
 ![](https://github.com/piliwilliam0306/platformio_rugby/blob/master/RB_block.jpg)
+-->
+<img src="https://github.com/piliwilliam0306/platformio_rugby/blob/master/RB_block.jpg" alt="" align="left">
 
 ## Target ID list
   
@@ -82,4 +85,4 @@ Pins| 328p_avoid (J3) | (J4) | (J5) | (J6) | 328p_program (J8) | 328p_IMU (J9) |
   
   [Arduino Default Fuse Settings](http://www.codingwithcody.com/2011/06/25/arduino-default-fuse-settings/)
   
-  
+
